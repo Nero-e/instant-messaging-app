@@ -9,63 +9,94 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* screen */}
       <div className="h-screen bg-ghost-white dark:bg-rich-black selection:bg-[#1C1E30] selection:text-ghost-white dark:selection:bg-ghost-white-100 dark:selection:text-rich-black">
-        <div className="flex flex-col min-h-full items-center md:items-start">
-          <div className="flex flex-col w-full max-w-lg p-6 md:px-8 gap-4">
-            <input
-              type="text"
-              placeholder="Search"
-              className="w-full h-12 rounded-3xl bg-ghost-white-100 outline-1 text-rich-black outline-rich-black px-6 py-1.5 transition-all dark:bg-[#1C1E30] dark:outline-ghost-white-100 dark:text-ghost-white"
-            />
-          </div>
-          <div className="flex flex-col min-h-full mx-auto max-w-xl w-full">
-            <div className="flex flex-row w-full px-4 py-3">
-              <div className="flex flex-col w-auto justify-center items-center mr-6">
-                <div className="flex flex-col bg-ghost-white-100 rounded-full w-[64px] h-[64px] justify-center items-center">
-                  <img className="rounded-full w-full h-full" src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png" alt="img" />
+        {/* divider */}
+        <div className="flex flex-col md:flex-row">
+          {/* container */}
+          <div className="flex flex-col max-w-lg mx-auto w-full items-center">
+            {/* Search component */}
+            <div className="flex flex-col w-full max-w-lg p-6 md:px-8 gap-4">
+              <input
+                type="text"
+                placeholder="Search"
+                className="w-full h-12 rounded-3xl bg-ghost-white-100 outline-1 text-rich-black outline-rich-black px-6 py-1.5 transition-all dark:bg-[#1C1E30] dark:outline-ghost-white-100 dark:text-ghost-white"
+              />
+            </div>
+            {/* chat list */}
+            <div className="flex flex-col w-full items-center md:items-start max-w-lg transition-all">
+              {/* chat item */}
+              <div className="flex flex-row w-full px-4 pt-3 pb-5 cursor-pointer">
+                <div className="flex flex-col w-auto justify-center items-center mr-6">
+                  <div className="flex flex-col bg-ghost-white-100 rounded-full w-[64px] h-[64px] justify-center items-center">
+                    <img
+                      className="rounded-full w-full h-full"
+                      src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col w-full overflow-hidden">
+                  <div className="flex font-bold text-rich-black">
+                    TypeScript
+                  </div>
+                  <div className="flex text-ghost-white-400">
+                    <p className="text-ellipsis overflow-hidden whitespace-nowrap mr-6">
+                      instant messange
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col w-auto h-auto">
+                  <div className="flex flex-col w-full py-1">
+                    <p className="text-ghost-white-400 text-sm">12:45</p>
+                  </div>
+                  <div className="flex flex-col w-auto justify-start items-center">
+                    <div className="flex flex-col bg-raspberry rounded-full w-[20px] h-[20px] justify-center items-center">
+                      <p className="text-[10px] text-ghost-white">1</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col w-full">
-                <div className="flex font-bold text-rich-black">TypeScript</div>
-                <div className="flex text-ghost-white-400">
-                  <p className="text-ellipsis">instant messange</p>
+              <div className="flex flex-row w-full px-4 py-3">
+                <div className="flex flex-col w-auto justify-center items-center mr-6">
+                  <div className="flex flex-col bg-ghost-white-100 rounded-full w-[64px] h-[64px] justify-center items-center">
+                    <img
+                      className="rounded-full w-full h-full"
+                      src="https://avatars.githubusercontent.com/u/101362222?v=4"
+                      alt="img"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col w-auto h-auto">
-                <div className="flex flex-col w-full py-1">
-                  <p className="text-ghost-white-400 text-sm">12:30</p>
+                <div className="flex flex-col w-full overflow-hidden">
+                  <div className="flex font-bold text-rich-black">Rann1n</div>
+                  <div className="flex text-ghost-white-400">
+                    <p className="text-ellipsis overflow-hidden whitespace-nowrap mr-6">
+                      En el nuevo juego de From Software.... dhbagh d bnajlhj
+                      hafb dsgfbs gfksdf skjdfb sdjkf bsfh sbf hsgfvsh f fshdbfh
+                      b sjfbs sdkhfgbj skfslkj nksjngsu sl kjnsugsgklsn ufnw sfj
+                      s;n
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col w-auto justify-start items-center">
-                  <div className="flex flex-col bg-raspberry rounded-full w-[20px] h-[20px] justify-center items-center">
-                    <p className="text-[10px] text-ghost-white">1</p>
+                <div className="flex flex-col w-auto h-auto">
+                  <div className="flex flex-col w-full py-1">
+                    <p className="text-ghost-white-400 text-sm">12:30</p>
+                  </div>
+                  <div className="flex flex-col w-auto justify-start items-center">
+                    <div className="flex flex-col bg-raspberry rounded-full w-[20px] h-[20px] justify-center items-center">
+                      <p className="text-[10px] text-ghost-white">2</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-row w-full px-4 py-3">
-              <div className="flex flex-col w-auto justify-center items-center mr-6">
-                <div className="flex flex-col bg-ghost-white-100 rounded-full w-[64px] h-[64px] justify-center items-center">
-                  <img className="rounded-full w-full h-full" src="https://avatars.githubusercontent.com/u/101362222?v=4" alt="img" />
-                </div>
-              </div>
-              <div className="flex flex-col w-full">
-                <div className="flex font-bold text-rich-black">Rann1n</div>
-                <div className="flex text-ghost-white-400">
-                  <p className="">En el nuevo juego de From Software....</p>
-                </div>
-              </div>
-              <div className="flex flex-col w-auto h-auto">
-                <div className="flex flex-col w-full py-1">
-                  <p className="text-ghost-white-400 text-sm">12:30</p>
-                </div>
-                <div className="flex flex-col w-auto justify-start items-center">
-                  <div className="flex flex-col bg-raspberry rounded-full w-[20px] h-[20px] justify-center items-center">
-                    <p className="text-[10px] text-ghost-white">2</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+          {/* separator */}
+          <div
+            role="separator"
+            className="w-px h-screen md:flex hidden visible border border-ghost-white-900 dark:border-[#1C1E30]"
+          ></div>
+          <div className="w-full hidden md:flex md:flex-col justify-center items-center">chats</div>
         </div>
       </div>
     </>
