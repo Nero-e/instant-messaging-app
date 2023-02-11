@@ -12,69 +12,49 @@ export default function Home() {
       {/* screen */}
       <div className="h-screen bg-ghost-white dark:bg-rich-black selection:bg-[#1C1E30] selection:text-ghost-white dark:selection:bg-ghost-white-100 dark:selection:text-rich-black">
         {/* divider */}
-        <div className="flex flex-col md:flex-row">
-          {/* container */}
-          <div className="flex flex-col max-w-lg mx-auto w-full items-center">
-            {/* Search component */}
-            <div className="flex flex-col w-full max-w-lg p-6 md:px-8 gap-4">
+        <div className="flex flex-col md:flex-row h-full w-full">
+          {/* contact container */}
+          <div className="flex flex-col h-full w-full md:max-w-lg items-center transition-all">
+            {/* header component */}
+            <div className="flex flex-col w-full px-4 py-2 justify-center items-end shadow-md">
+              <div>
+                <div className="flex flex-col bg-ghost-white-100 rounded-full w-[48px] h-[48px] justify-center items-center"></div>
+              </div>
+            </div>
+            {/* search component */}
+            <div className="flex flex-col w-full px-6 py-8 md:px-8 gap-4">
               <input
                 type="text"
                 placeholder="Search"
-                className="w-full h-12 rounded-3xl bg-ghost-white-100 outline-1 text-rich-black outline-rich-black px-6 py-1.5 transition-all dark:bg-[#1C1E30] dark:outline-ghost-white-100 dark:text-ghost-white"
+                className="w-full h-12 px-6 py-1.5 rounded-3xl bg-ghost-white-100 outline-1 text-rich-black outline-rich-black dark:bg-[#1C1E30] dark:outline-ghost-white-100 dark:text-ghost-white transition-all"
               />
             </div>
-            {/* chat list */}
-            <div className="flex flex-col w-full items-center md:items-start max-w-lg transition-all">
-              {/* chat item */}
-              <div className="flex flex-row w-full px-4 pt-3 pb-5 cursor-pointer">
+            {/* option list */}
+            <div className="flex flex-col w-full h-8" >
+            </div>
+            {/* contact list */}
+            <div className="flex flex-col w-full items-center md:items-start transition-all">
+              {/* contact item */}
+              <div className="flex flex-row w-full px-4 pt-3 pb-5 cursor-pointer shadow-sm">
+                {/* icon container */}
                 <div className="flex flex-col w-auto justify-center items-center mr-6">
+                  {/* icon */}
                   <div className="flex flex-col bg-ghost-white-100 rounded-full w-[64px] h-[64px] justify-center items-center">
-                    <img
-                      className="rounded-full w-full h-full"
-                      src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png"
-                      alt="img"
-                    />
+                    {/* image */}
                   </div>
                 </div>
+                {/* text container */}
                 <div className="flex flex-col w-full overflow-hidden">
                   <div className="flex font-bold text-rich-black">
-                    TypeScript
+                    <p>TypeScript</p>
                   </div>
-                  <div className="flex text-ghost-white-400">
-                    <p className="text-ellipsis overflow-hidden whitespace-nowrap mr-6">
-                      instant messange
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-col w-auto h-auto">
-                  <div className="flex flex-col w-full py-1">
-                    <p className="text-ghost-white-400 text-sm">12:45</p>
-                  </div>
-                  <div className="flex flex-col w-auto justify-start items-center">
-                    <div className="flex flex-col bg-raspberry rounded-full w-[20px] h-[20px] justify-center items-center">
-                      <p className="text-[10px] text-ghost-white">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-row w-full px-4 py-3">
-                <div className="flex flex-col w-auto justify-center items-center mr-6">
-                  <div className="flex flex-col bg-ghost-white-100 rounded-full w-[64px] h-[64px] justify-center items-center">
-                    <img
-                      className="rounded-full w-full h-full"
-                      src="https://avatars.githubusercontent.com/u/101362222?v=4"
-                      alt="img"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col w-full overflow-hidden">
-                  <div className="flex font-bold text-rich-black">Rann1n</div>
-                  <div className="flex text-ghost-white-400">
-                    <p className="text-ellipsis overflow-hidden whitespace-nowrap mr-6">
-                      En el nuevo juego de From Software.... dhbagh d bnajlhj
-                      hafb dsgfbs gfksdf skjdfb sdjkf bsfh sbf hsgfvsh f fshdbfh
-                      b sjfbs sdkhfgbj skfslkj nksjngsu sl kjnsugsgklsn ufnw sfj
-                      s;n
+                  <div className="flex flex-col overflow-hidden max-h-6">
+                    <p className="text-ghost-white-400 overflow-hidden text-ellipsis">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt quae dolorum est quia inventore cumque minus tempora
+                      doloribus quisquam incidunt eveniet nesciunt, culpa
+                      officiis provident expedita sapiente doloremque, voluptas
+                      iusto.
                     </p>
                   </div>
                 </div>
@@ -91,12 +71,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* separator */}
           <div
             role="separator"
-            className="w-px h-screen md:flex hidden visible border border-ghost-white-900 dark:border-[#1C1E30]"
+            className="h-screen md:flex hidden visible border border-ghost-white-900 dark:border-[#1C1E30]"
           ></div>
-          <div className="w-full hidden md:flex md:flex-col justify-center items-center">chats</div>
+          {/* chat container */}
+          <div className="md:flex md:flex-col hidden w-full items-center justify-center transition-all">
+            Second container
+          </div>
         </div>
       </div>
     </>
